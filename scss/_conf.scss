@@ -1,0 +1,21 @@
+#conferences {
+  // background-color: $gray-900;
+  h2, p {
+    color: #fff;
+  }
+  p {
+    font-weight: 300;
+  }
+  .profile-picture {
+    display: block;
+    // width: 200px;
+    height: 100%;
+    background-size: auto 100%;
+  }
+  .kim-thuy {
+    background: $gray-900 url(../img/conferenciers/kim-thuy.png) no-repeat right center;
+  }
+  .joe-belliveau {
+    background: $gray-900 url(../img/conferenciers/joe-belliveau.png) no-repeat right center;
+  }
+}

@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $gray-900;
+  background-color: $secondary;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -13,7 +13,17 @@
   }
   .navbar-brand {
     color: $primary;
-    @include script-font;
+    @include heading-font;
+    direction: none;
+    background: url(../img/logo-acronym-white.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40px;
+    min-width: 200px;
+    // min-width: 200px;
+
+    // @include script-font;
     &.active,
     &:active,
     &:focus,
@@ -52,6 +62,7 @@
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      display: none;
     }
     .navbar-nav {
       .nav-item {
@@ -63,10 +74,15 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: #1c1517;
+      // background-color: $gray-900;
       .navbar-brand {
+        display: block;
         font-size: 1.25em;
         padding: 12px 0;
+      }
+      .nav-item .nav-link {
+        color: white;
       }
     }
   }

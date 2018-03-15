@@ -1,0 +1,30 @@
+#conferences {
+  // background-color: $gray-900;
+  p {
+    font-weight: 300;
+  }
+  .profile-picture {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: auto 100%;
+    text-align: right;
+  }
+  .kim-thuy {
+    background: $gray-900 url(../img/conferenciers/kim-thuy.png) no-repeat center center;
+  }
+  .joe-belliveau {
+    background: $gray-900 url(../img/conferenciers/joe-belliveau.png) no-repeat center center;
+  }
+  .row {
+    margin-bottom: 30px;
+  }
+  .subtitle {
+    font-family: 'myFont', Arial, sans-serif;//'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  // .profile-picture img {
+  //   float:right;
+  //   display: block;
+  // }
+}

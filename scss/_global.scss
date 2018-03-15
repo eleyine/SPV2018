@@ -47,7 +47,7 @@ section {
 }
 @media(min-width:768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 
@@ -57,9 +57,17 @@ section {
   font-weight: 700;
 }
 
+.white-text {
+  color: #fff;
+}
+
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
+}
+
+.bg-primary {
+  background-color: $primary !important;  
 }
 
 .btn-primary {
@@ -95,4 +103,17 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url('../fonts/Brandon_reg.otf') format('opentype');
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
 }

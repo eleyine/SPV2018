@@ -4,6 +4,12 @@ section#contact {
   background-image: url('../img/map-image.png');
   background-repeat: no-repeat;
   background-position: center;
+  a {
+    color: #fff;
+  }
+  i {
+    color: #fff;
+  }
   .section-heading {
     color: $white;
   }

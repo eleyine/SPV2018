@@ -6,7 +6,8 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
-
+var pug = require('gulp-pug');
+var beautify = require('gulp-html-beautify');
 // Set the banner content
 var banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -92,6 +93,15 @@ gulp.task('js:minify', function() {
     .pipe(browserSync.stream());
 });
 
+// IMG
+gulp.task('img', function() {
+  return gulp.src([
+      './img/**'
+    ])
+    .pipe(gulp.dest('./img'))
+    .pipe(browserSync.stream());
+});
+
 // JS
 gulp.task('js', ['js:minify']);
 
@@ -107,9 +117,22 @@ gulp.task('browserSync', function() {
   });
 });
 
+gulp.task('pug', function buildHTML() {
+  return gulp.src('./pug/*.pug')
+    .pipe(pug())
+    .pipe(beautify())
+    .pipe(gulp.dest('./'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
 // Dev task
-gulp.task('dev', ['css', 'js', 'browserSync'], function() {
+gulp.task('dev', ['css', 'js', 'pug', 'browserSync'], function() {
+  
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./img/*', ['img']);
+  gulp.watch('./pug/*', ['pug']);
   gulp.watch('./*.html', browserSync.reload);
 });

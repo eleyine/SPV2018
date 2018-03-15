@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -8,15 +8,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #dc1442;
 }
 
 a:hover {
-  color: #fec503;
+  color: #ad1034;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #dc1442 !important;
 }
 
 h1,
@@ -50,7 +50,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 
@@ -59,19 +59,27 @@ section h3.section-subheading {
   font-weight: 700;
 }
 
+.white-text {
+  color: #fff;
+}
+
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
 }
 
+.bg-primary {
+  background-color: #dc1442 !important;
+}
+
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #dc1442;
+  border-color: #dc1442;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #b91137 !important;
+  border-color: #b91137 !important;
   color: white;
 }
 
@@ -80,12 +88,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #dc1442;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #dc1442;
   text-shadow: none;
 }
 
@@ -97,8 +105,21 @@ img::-moz-selection {
   background: transparent;
 }
 
+@font-face {
+  font-family: 'myFont';
+  src: url("../fonts/Brandon_reg.otf") format("opentype");
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
 #mainNav {
-  background-color: #212529;
+  background-color: #063462;
 }
 
 #mainNav .navbar-toggler {
@@ -108,17 +129,24 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #dc1442;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  color: #dc1442;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  direction: none;
+  background: url(../img/logo-acronym-white.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40px;
+  min-width: 200px;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #ad1034;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -131,7 +159,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #dc1442;
 }
 
 @media (min-width: 992px) {
@@ -149,6 +177,7 @@ img::-moz-selection {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    display: none;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
@@ -156,18 +185,23 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #1c1517;
   }
   #mainNav.navbar-shrink .navbar-brand {
+    display: block;
     font-size: 1.25em;
     padding: 12px 0;
+  }
+  #mainNav.navbar-shrink .nav-item .nav-link {
+    color: white;
   }
 }
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background: linear-gradient(rgba(219, 27, 68, 0.25), rgba(0, 0, 0, 0.15)), url("../img/header-bg-darker.png");
+  background-color: #000;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -175,53 +209,162 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 800px;
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 250px;
   padding-bottom: 100px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 @media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+  header.masthead .container {
+    padding-top: 50px;
   }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
+  header.masthead .logo {
+    background: url("../img/logo-full-text-white.png");
+    background-position: center center;
+    min-height: 200px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  header.masthead .intro-text .intro-subtitle {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 0;
     margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  header.masthead .intro-text .intro-subtitle p {
+    color: white;
+    opacity: 0.75;
+    font-family: 'myFont', Arial, sans-serif;
+    font-weight: 200;
+    margin-bottom: 0;
+  }
+  header.masthead .intro-text .intro-subtitle p.strong {
+    font-weight: 700;
+  }
+  header.masthead .intro-text .intro-subtitle p.small {
+    font-size: 20px;
+  }
+  header.masthead .intro-text .intro-subtitle p.overlay {
+    background: #dc1442;
+    font-weight: 500;
+    margin-bottom: 50px;
+    opacity: 1;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
 
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
+#about {
+  background-color: #212529;
+}
+
+#about h2, #about p {
+  color: #fff;
+}
+
+#about p {
+  font-weight: 300;
+}
+
+#about .logo {
+  background: #212529 url(../img/logo-white.png) no-repeat right center;
+  display: block;
+  height: 100%;
+  background-size: auto 100%;
+}
+
+#conferences p {
+  font-weight: 300;
+}
+
+#conferences .profile-picture {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-size: auto 100%;
+  text-align: right;
+}
+
+#conferences .kim-thuy {
+  background: #212529 url(../img/conferenciers/kim-thuy.png) no-repeat center center;
+}
+
+#conferences .joe-belliveau {
+  background: #212529 url(../img/conferenciers/joe-belliveau.png) no-repeat center center;
+}
+
+#conferences .row {
+  margin-bottom: 30px;
+}
+
+#conferences .subtitle {
+  font-family: 'myFont', Arial, sans-serif;
+}
+
+#ateliers .heading {
+  margin-bottom: 30px;
+}
+
+#ateliers .media {
+  margin-bottom: 30px;
+}
+
+#ateliers .subtitle {
+  font-family: 'myFont', Arial, sans-serif;
+  font-weight: 200;
+}
+
+#ateliers .strong {
+  font-weight: 700;
+  color: #333;
+}
+
+#horaire .heading {
+  color: white;
+}
+
+#horaire .heading h2 {
+  margin-bottom: 50px;
+}
+
+#horaire .subtitle {
+  display: inline-block;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  width: 100%;
+}
+
+#horaire p {
+  color: white;
+  font-weight: 200;
+}
+
+#horaire p.time {
+  text-align: right;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+#horaire p.activity {
+  letter-spacing: 1px;
+}
+
+#horaire p strong {
+  font-weight: 700;
 }
 
 #portfolio .portfolio-item {
@@ -245,7 +388,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(220, 20, 66, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -449,7 +592,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #dc1442;
 }
 
 .timeline > li .timeline-image h4 {
@@ -598,6 +741,14 @@ section#contact {
   background-position: center;
 }
 
+section#contact a {
+  color: #fff;
+}
+
+section#contact i {
+  color: #fff;
+}
+
 section#contact .section-heading {
   color: #fff;
 }
@@ -620,7 +771,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #dc1442;
   box-shadow: none;
 }
 
@@ -690,5 +841,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #dc1442;
 }

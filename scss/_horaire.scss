@@ -1,0 +1,30 @@
+#horaire {
+  .heading {
+    h2 {
+        
+        margin-bottom: 50px;
+    }
+    color: white;
+   }
+   .subtitle {
+        display: inline-block;
+        padding:  0 10px;
+        border: 2px solid #fff;
+        width: 100%;
+   }
+   p {
+    color: white;
+    &.time {
+        text-align: right;
+        opacity: 0.6;
+        font-weight: 400;
+    }
+    &.activity {
+        letter-spacing: 1px;
+    }
+    font-weight: 200;
+    strong {
+        font-weight: 700;
+    }
+   }
+}

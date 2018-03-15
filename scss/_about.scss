@@ -1,0 +1,16 @@
+#about {
+  background-color: $gray-900;
+  h2, p {
+    color: #fff;
+  }
+  p {
+    font-weight: 300;
+  }
+  .logo {
+    background: $gray-900 url(../img/logo-white.png) no-repeat right center;
+    display: block;
+    // width: 200px;
+    height: 100%;
+    background-size: auto 100%;
+  }
+}
