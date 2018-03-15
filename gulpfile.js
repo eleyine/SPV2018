@@ -8,6 +8,8 @@ var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
 var pug = require('gulp-pug');
 var beautify = require('gulp-html-beautify');
+var ghPages = require('gulp-gh-pages');
+
 // Set the banner content
 var banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -125,6 +127,25 @@ gulp.task('pug', function buildHTML() {
     .pipe(browserSync.reload({
       stream: true
     }))
+});
+
+// IMG
+gulp.task('copy-site', function() {
+  return gulp.src([
+      './img/**/*',
+      './css/**/*',
+      './js/**/*',
+      './fonts/**/*',
+      './vendor/**/*',
+      '*.html'
+    ], {base: '.'})
+    .pipe(gulp.dest('site/'));
+    // .pipe(browserSync.stream());
+});
+
+gulp.task('deploy', ['copy-site'], function() {
+  return gulp.src('./site/**/*')
+    .pipe(ghPages());
 });
 
 // Dev task
