@@ -15,10 +15,6 @@
     color: $primary;
     @include heading-font;
     direction: none;
-    background: url(../img/logo-acronym-white.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
     height: 40px;
     min-width: 200px;
     // min-width: 200px;
@@ -49,6 +45,13 @@
   }
   &.navbar-shrink {
     background-color: #1c1517;
+    .navbar-brand {
+      display: block;
+      background: url(../img/logo-acronym-white.png);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
   }
 }
 
