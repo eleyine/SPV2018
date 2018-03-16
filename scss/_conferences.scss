@@ -5,8 +5,9 @@
   }
   .profile-picture {
     display: inline-block;
-    width: 200px;
+    // width: 200px;
     height: 200px;
+    width: 100%;
     background-size: auto 100%;
     text-align: right;
   }
@@ -27,4 +28,26 @@
   //   float:right;
   //   display: block;
   // }
+}
+
+@media(max-width:768px) {
+  .profile-picture {
+    // float: right !important;
+    // text-align: center;
+    // margin:auto;
+    min-height: 270px;
+  }
+  #conferences {
+      padding-top: 30px;
+  }
+}
+
+
+@media(min-width:768px) {
+  .profile-picture {
+    img {
+      float: right !important;
+    }
+    margin-right: 50px;
+  }
 }
