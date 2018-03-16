@@ -166,6 +166,12 @@ img::-moz-selection {
   background-color: #1c1517;
 }
 
+@media (max-width: 992px) {
+  #mainNav .navbar-brand {
+    background-position: left center;
+  }
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
