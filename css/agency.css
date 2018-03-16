@@ -425,6 +425,17 @@ section#interfacultaire .faculties {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  #horaire p.time, #horaire p.activity {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  #horaire .schedule-item {
+    margin-bottom: 25px;
+  }
+}
+
 #sponsors {
   padding-bottom: 30px;
 }
