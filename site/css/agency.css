@@ -118,6 +118,10 @@ img::-moz-selection {
   background-color: #f3f3f3;
 }
 
+.red {
+  color: #dc1442;
+}
+
 #mainNav {
   background-color: #1c1517;
 }
@@ -213,7 +217,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background: linear-gradient(rgba(219, 27, 68, 0.25), rgba(0, 0, 0, 0.15)), url("../img/header-bg-darker.png");
+  background: linear-gradient(rgba(219, 27, 68, 0.25), rgba(0, 0, 0, 0.15)), url("../img/header-bg.jpg");
   background-color: #000;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -225,8 +229,29 @@ header.masthead {
   min-height: 800px;
 }
 
+header.masthead .stay-posted {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+header.masthead .stay-posted p {
+  opacity: 0.75;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .stay-posted p.red {
+  color: #dc1442;
+}
+
+header.masthead .stay-posted p.emphasis {
+  border: 1px solid #fff;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+}
+
 header.masthead .intro-text {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 50px;
 }
 
@@ -238,7 +263,7 @@ header.masthead .intro-text .intro-subtitle {
 
 header.masthead .intro-text .intro-subtitle p {
   color: white;
-  opacity: 0.75;
+  opacity: 0.9;
   font-family: 'myFont', Arial, sans-serif;
   font-weight: 200;
   margin-bottom: 0;
@@ -269,7 +294,7 @@ header.masthead #btn-inscription {
 
 @media (max-width: 768px) {
   .header-logo {
-    background: url("../img/logo-square.png");
+    background: url("../img/logo-square-medfam.png");
     min-height: 300px;
     max-height: 300px;
   }
@@ -280,14 +305,18 @@ header.masthead #btn-inscription {
 
 @media (min-width: 768px) {
   .header-logo {
-    background: url("../img/logo-full-text-white.png");
-    min-height: 200px;
-    max-height: 200px;
+    background: url("../img/logo-full-text-white-medfam.png");
+    min-height: 250px;
+    max-height: 250px;
   }
 }
 
+header.masthead .stay-posted {
+  margin-top: 0;
+}
+
 #about {
-  background-color: #212529;
+  background-color: #1c1517;
 }
 
 #about h2, #about p {
@@ -299,7 +328,7 @@ header.masthead #btn-inscription {
 }
 
 #about .logo {
-  background: #212529 url(../img/logo-white.png) no-repeat;
+  background: #1c1517 url(../img/logo-white.png) no-repeat;
   display: block;
   background-size: auto 100%;
   min-height: 200px;

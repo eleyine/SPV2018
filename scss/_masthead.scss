@@ -1,11 +1,14 @@
 // Styling for the masthead
+
 header.masthead {
   text-align: center;
   color: white;
   background: linear-gradient(
       rgba(219, 27, 68, 0.25), 
+      // rgba(0÷, 0, 0, 0.25), 
+
       rgba(0, 0, 0, 0.15)),
-      url('../img/header-bg-darker.png');
+      url('../img/header-bg.jpg');
   background-color: #000;
   // , url('../img/header-bg.jpg');
   // background-color: #000;
@@ -14,8 +17,29 @@ header.masthead {
   background-position: center center;
   @include background-cover;
   min-height: 800px;
+  .stay-posted {
+    padding-top: 20px;
+    // padding-top: 0;
+    font-size: 20px;
+    // font-weight: 700;
+    p {
+      // color: red;
+      opacity: 0.75;
+      @include heading-font;
+      &.red {
+        color: $primary;
+      }
+      &.emphasis {
+        border: 1px solid #fff;
+        width: 200px;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+    // padding-bottom: 50px;
+  }
   .intro-text {
-    padding-top: 100px;
+    padding-top: 75px;
     padding-bottom: 50px;
     .intro-subtitle {
         font-size: 25px;
@@ -23,7 +47,7 @@ header.masthead {
         padding-bottom: 0;
         p {
           color: white;
-          opacity: 0.75;
+          opacity: 0.9;
           font-family: 'myFont', Arial, sans-serif;//'Open Sans', 'Helvetica Neue', Arial, sans-serif;
           font-weight: 200;
           margin-bottom: 0;
@@ -55,7 +79,7 @@ header.masthead {
 }
 @media(max-width:768px) {
   .header-logo {
-      background: url('../img/logo-square.png');
+      background: url('../img/logo-square-medfam.png');
       min-height: 300px;
       max-height: 300px;
     }
@@ -66,8 +90,13 @@ header.masthead {
 
 @media(min-width:768px) {
   .header-logo {
-      background: url('../img/logo-full-text-white.png');
-      min-height: 200px;
-      max-height: 200px;
+      background: url('../img/logo-full-text-white-medfam.png');
+      min-height: 250px;
+      max-height: 250px;
   }
+}
+
+
+header.masthead .stay-posted {
+  margin-top: 0;
 }
