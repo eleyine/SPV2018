@@ -347,6 +347,32 @@ header.masthead .stay-posted {
   }
 }
 
+footer.footer {
+  background-color: #1c1517;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+footer.footer p {
+  padding-top: 10px;
+  color: #ddd;
+}
+
+footer.footer .love {
+  color: #dc1442;
+}
+
+footer.footer a {
+  color: #ddd;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer.footer a:hover {
+  color: #fff;
+}
+
 section#interfacultaire {
   padding-top: 0;
   padding-bottom: 20px;
@@ -356,7 +382,7 @@ section#interfacultaire .faculties {
   margin-bottom: 15px;
 }
 
-#conferences p {
+#conferences p, #conferences li {
   font-weight: 300;
 }
 
@@ -384,9 +410,28 @@ section#interfacultaire .faculties {
   font-family: 'myFont', Arial, sans-serif;
 }
 
+#conferences .objectifs {
+  color: #333;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#conferences img {
+  width: 250px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .profile-picture {
     min-height: 270px;
+  }
+  .profile-picture img {
+    height: 250px !important;
+    width: auto !important;
   }
   #conferences {
     padding-top: 30px;
@@ -407,7 +452,7 @@ section#interfacultaire .faculties {
 }
 
 #ateliers .media {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 #ateliers .subtitle {
@@ -418,6 +463,64 @@ section#interfacultaire .faculties {
 #ateliers .strong {
   font-weight: 700;
   color: #333;
+}
+
+#ateliers .atelier-title {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#ateliers .atelier-title:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#ateliers .atelier-title .media-body p.subtitle {
+  line-height: 20px;
+  font-family: Open Sans, Helvetica, sans-serif;
+  color: #343a40;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#ateliers .atelier-title .media-body p.subtitle strong {
+  font-weight: bold;
+}
+
+#ateliers .atelier-title .caret .fa.text-primary {
+  color: #333 !important;
+}
+
+#ateliers .atelier-title .caret .fa.fa-plus {
+  display: none;
+}
+
+#ateliers .atelier-title .caret .fa-stack {
+  display: block;
+  width: 100%;
+}
+
+#ateliers .atelier-title p.tiny {
+  padding-top: 40px;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #999;
+  opacity: 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+#ateliers .atelier-title.collapsed .caret .fa-minus {
+  display: none;
+}
+
+#ateliers .atelier-title.collapsed .caret .fa.fa-plus {
+  display: block;
+}
+
+#ateliers .atelier-title.collapsed .caret .tiny {
+  opacity: 1;
 }
 
 #horaire .heading {
@@ -474,7 +577,7 @@ section#interfacultaire .faculties {
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #1c1517;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -490,6 +593,10 @@ section#contact .social-link {
 
 section#contact i {
   color: #fff;
+}
+
+section#contact p {
+  color: #eee;
 }
 
 section#contact .section-heading {
