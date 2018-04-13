@@ -142,7 +142,7 @@ img::-moz-selection {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   direction: none;
   height: 40px;
-  min-width: 200px;
+  min-width: 100px;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -374,7 +374,15 @@ footer.footer a:hover {
 }
 
 #atouts {
-  padding-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+#interfacultaire {
+  padding-bottom: 0;
+}
+
+#dpc {
+  padding-top: 20px;
 }
 
 section#interfacultaire {
