@@ -373,6 +373,10 @@ footer.footer a:hover {
   color: #fff;
 }
 
+#atouts {
+  padding-bottom: 0px;
+}
+
 section#interfacultaire {
   padding-top: 0;
   padding-bottom: 20px;
