@@ -143,6 +143,7 @@ img::-moz-selection {
   direction: none;
   height: 40px;
   min-width: 100px;
+  max-width: 100px;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
