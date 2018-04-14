@@ -460,35 +460,35 @@ section#interfacultaire .faculties {
   }
 }
 
-#ateliers .heading {
+#ateliers .heading, .ateliers .heading {
   margin-bottom: 30px;
 }
 
-#ateliers .media {
+#ateliers .media, .ateliers .media {
   margin-bottom: 5px;
 }
 
-#ateliers .subtitle {
+#ateliers .subtitle, .ateliers .subtitle {
   font-family: 'myFont', Arial, sans-serif;
   font-weight: 200;
 }
 
-#ateliers .strong {
+#ateliers .strong, .ateliers .strong {
   font-weight: 700;
   color: #333;
 }
 
-#ateliers .atelier-title {
+#ateliers .atelier-title, .ateliers .atelier-title {
   padding: 10px;
   border-radius: 3px;
 }
 
-#ateliers .atelier-title:hover {
+#ateliers .atelier-title:hover, .ateliers .atelier-title:hover {
   background-color: #ddd;
   cursor: pointer;
 }
 
-#ateliers .atelier-title .media-body p.subtitle {
+#ateliers .atelier-title .media-body p.subtitle, .ateliers .atelier-title .media-body p.subtitle {
   line-height: 20px;
   font-family: Open Sans, Helvetica, sans-serif;
   color: #343a40;
@@ -497,24 +497,24 @@ section#interfacultaire .faculties {
   margin-bottom: 5px;
 }
 
-#ateliers .atelier-title .media-body p.subtitle strong {
+#ateliers .atelier-title .media-body p.subtitle strong, .ateliers .atelier-title .media-body p.subtitle strong {
   font-weight: bold;
 }
 
-#ateliers .atelier-title .caret .fa.text-primary {
+#ateliers .atelier-title .caret .fa.text-primary, .ateliers .atelier-title .caret .fa.text-primary {
   color: #333 !important;
 }
 
-#ateliers .atelier-title .caret .fa.fa-plus {
+#ateliers .atelier-title .caret .fa.fa-plus, .ateliers .atelier-title .caret .fa.fa-plus {
   display: none;
 }
 
-#ateliers .atelier-title .caret .fa-stack {
+#ateliers .atelier-title .caret .fa-stack, .ateliers .atelier-title .caret .fa-stack {
   display: block;
   width: 100%;
 }
 
-#ateliers .atelier-title p.tiny {
+#ateliers .atelier-title p.tiny, .ateliers .atelier-title p.tiny {
   padding-top: 40px;
   font-size: 8px;
   text-transform: uppercase;
@@ -524,16 +524,28 @@ section#interfacultaire .faculties {
   font-weight: bold;
 }
 
-#ateliers .atelier-title.collapsed .caret .fa-minus {
+#ateliers .atelier-title.collapsed .caret .fa-minus, .ateliers .atelier-title.collapsed .caret .fa-minus {
   display: none;
 }
 
-#ateliers .atelier-title.collapsed .caret .fa.fa-plus {
+#ateliers .atelier-title.collapsed .caret .fa.fa-plus, .ateliers .atelier-title.collapsed .caret .fa.fa-plus {
   display: block;
 }
 
-#ateliers .atelier-title.collapsed .caret .tiny {
+#ateliers .atelier-title.collapsed .caret .tiny, .ateliers .atelier-title.collapsed .caret .tiny {
   opacity: 1;
+}
+
+#ateliersposter .caret {
+  display: none !important;
+}
+
+#ateliersposter .media-body p.subtitle {
+  display: none !important;
+}
+
+#ateliersposter .media-body .subtitle .strong {
+  color: #dc1442 !important;
 }
 
 #horaire .heading {
