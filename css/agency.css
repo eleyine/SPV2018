@@ -122,6 +122,13 @@ img::-moz-selection {
   color: #dc1442;
 }
 
+@media (max-width: 768px) {
+  .sponsor-item img {
+    max-width: 250px !important;
+    min-width: auto !important;
+  }
+}
+
 #mainNav {
   background-color: #1c1517;
 }
